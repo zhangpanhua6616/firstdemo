@@ -17,16 +17,24 @@ enum  Week {
         return weekName;
     }
     //定义一个静态方法，根据一个简称得到完整的星期名称
-    public static Week getResult(String input){
-        switch (input){
-            case "mon": return Week.MONDAY;
-            case "tue": return Week.TUESDAY;
-            case "wed": return Week.WEDNESDAY;
-            case "thu": return Week.THURSDAY;
-            case "fri": return Week.FRIDAY;
-            case "sat": return Week.SATURDAY;
-            case "sun": return Week.SUNDAY;
-            default:return Week.MONDAY;
+    public static Week getResult(String week){
+        switch (week){
+            case "mon":
+                return Week.MONDAY;
+            case "tue":
+                return Week.TUESDAY;
+            case "wed":
+                return Week.WEDNESDAY;
+            case "thu":
+                return Week.THURSDAY;
+            case "fri":
+                return Week.FRIDAY;
+            case "sat":
+                return Week.SATURDAY;
+            case "sun":
+                return Week.SUNDAY;
+            default:
+                return Week.MONDAY;
         }
     }
 }
